@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/timeline.css">
+
+</head>
+<body>
+<div id="app">
+  <div class="header">
+    <p class="title">COVID-19</p>
+    <div class="update">
+      <p>Last Update at</p>
+      <p>2/27/2020,9:30:25 PM</p>
+    </div>
+    <div class="header-swiper-container left-header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          通知1通知1通知1
+        </div>
+        <div class="swiper-slide">
+          通知2通知2通知2
+        </div>
+        <div class="swiper-slide">
+          通知3通知3通知3通知3通知3通知3通知3通知3
+        </div>
+      </div>
+    </div>
+    <div class="header-swiper-container right-header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          通知1通知1通知1
+        </div>
+        <div class="swiper-slide">
+          通知2通知2通知2
+        </div>
+        <div class="swiper-slide">
+          通知3通知3通知3通知3通知3通知3通知3通知3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-left">
+      <div class="data-loop">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="title">Total Confirmed</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <p class="title">Total Deaths</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <p class="title">Total Recovered</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          <!-- 如果需要导航按钮 -->
+          <img src="img/prev.png" class="swiper-button-prev"/>
+          <img src="img/next.png" class="swiper-button-next"/>
+
+        </div>
+      </div>
+      <div class="data-loop word-swiper-container">
+        <div id="wordCloud01" class="wordCloud">
+        </div>
+        <img class="prevWordBtn prevWordBtn01" src="img/prev.png" />
+        <img class="nextWordBtn nextWordBtn01" src="img/next.png" />
+      </div>
+    </div>
+    <div class="main-middle">
+      <div class="data-map">
+        <img src="img/prev.png" class="map-button-prev"/>
+        <img src="img/next.png" class="map-button-next"/>
+      </div>
+      <div class="data-line">
+        <a class="play" href="javascript:;"></a>
+        <a class="stop" href="javascript:;"></a>
+        <div id='timeline-embed' style="width: 100%; height: 100%"></div>
+      </div>
+    </div>
+    <div class="main-left main-right">
+      <div class="data-loop">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="title">Total Confirmed</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <p class="title">Total Deaths</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <p class="title">Total Recovered</p>
+              <ul>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+                <li>
+                  <p><i>2608</i>Death</p>
+                  <p><span>Hubei</span> Mainland China</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          <!-- 如果需要导航按钮 -->
+          <img src="img/prev.png" class="swiper-button-prev"/>
+          <img src="img/next.png" class="swiper-button-next"/>
+
+        </div>
+      </div>
+      <div class="data-loop word-swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div id="wordCloud02" class="wordCloud">
+            </div>
+            <img class="prevWordBtn prevWordBtn02" src="img/prev.png" />
+            <img class="nextWordBtn nextWordBtn02" src="img/next.png" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/echarts-wordcloud.js"></script>
+<script src="js/wordCloud2.js"></script>
+<script src="js/main.js"></script>
+<script src="js/timeline.js"></script>
+<script type="text/javascript">
+  var timeline_json = {
+
+    // "title": {
+    //   "media": {
+    //     "url": "//www.flickr.com/photos/tm_10001/2310475988/",
+    //     "caption": "Whitney Houston performing on her My Love is Your Love Tour in Hamburg.",
+    //     "credit": "flickr/<a href='http://www.flickr.com/photos/tm_10001/'>tm_10001</a>"
+    //   },
+    //   "text": {
+    //     "headline": "Whitney Houston<br/> 1963 - 2012",
+    //     "text": "<p>Houston's voice caught the imagination of the world propelling her to superstardom at an early age becoming one of the most awarded performers of our time. This is a look into the amazing heights she achieved and her personal struggles with substance abuse and a tumultuous marriage.</p>"
+    //   },
+    //   "slide":{
+    //     "background":"#000000"
+    //   },
+    // },
+    "events": [
+      {
+        "media": {
+          "url": "https://static01.nyt.com/images/2020/02/29/world/29virus-briefing8/merlin_169792431_7dd8ddcb-2f35-47a9-b57e-024ed42a8edb-superJumbo.jpg?quality=90&auto=webp",
+          "caption": "Houston's mother and Gospel singer, Cissy Houston (left) and cousin Dionne Warwick.",
+          "credit": "Cissy Houston photo:<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='http://commons.wikimedia.org/wiki/File%3ADionne_Warwick_television_special_1969.JPG'>Dionne Warwick: CBS Television via Wikimedia Commons</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "1",
+          "year": "2020"
+        },
+        "background":{
+          "color":"#000000",
+          "autolink":false
+        },
+        "unique_id":'a',
+        "group": "Group 1",
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "2",
+          "year": "2020"
+        },
+        "group": "Group 2",
+        "text": {
+          "headline": "First Recording",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        },
+        "unique_id":1
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "3",
+          "year": "2020"
+        },
+        "group": "Group 3",
+        "text": {
+          "headline": "First Recording",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        },
+        "unique_id":1
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "4",
+          "year": "2020"
+        },
+        "group": "Group 4",
+        "text": {
+          "headline": "Coronavirus Updates: Trump Expands Travel Restrictions on Iran",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        },
+        "unique_id":1
+      }
+    ]
+  }; // replace make_the_json() with the JSON object you created
+  // two arguments: the id of the Timeline container (no '#')
+  // and the JSON object or an instance of TL.TimelineConfig created from
+  // a suitable JSON object
+  window.timeline = new TL.Timeline('timeline-embed', timeline_json
+  // , {
+  //     	language: "fr",
+  //     	ga_property_id: "UA-27829802-4"
+  //     }
+      );
+  var autoPlayTimer = null;
+  var lineIndex = '';
+  timeline.on('change', function(data) {
+    lineIndex = data.unique_id;
+    console.log(data)
+  });
+  function playTimeLine() {
+    $('.data-line .stop').hide();
+    $('.data-line .play').show();
+    autoPlayTimer = setInterval(function () {
+      if(lineIndex===timeline_json.events[timeline_json.events.length-1].unique_id){
+        timeline.goToStart();
+        // clearInterval(autoPlayTimer);
+        // $('.data-line .play').hide();
+        // $('.data-line .stop').show();
+        // return false
+      }else {
+        timeline.goToNext();
+      }
+    },1000);
+
+  };
+  $('.data-line .stop').click(function () {
+    playTimeLine();
+  });
+  $('.data-line .play').click(function () {
+    clearInterval(autoPlayTimer);
+    $('.data-line .play').hide();
+    $('.data-line .stop').show();
+  });
+  playTimeLine();
+
+</script>
+</html>
