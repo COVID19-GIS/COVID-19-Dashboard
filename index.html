@@ -12,10 +12,9 @@
 <body>
 <div id="app">
   <div class="header">
-    <p class="title">COVID-19</p>
+    <p class="title">COVID-2019</p>
     <div class="update">
-      <p>Last Update at</p>
-      <p>2/27/2020,9:30:25 PM</p>
+      <p>Last Update at 2/27/2020</p>
     </div>
     <div class="header-swiper-container left-header">
       <div class="swiper-wrapper">
@@ -144,20 +143,22 @@
       <div class="data-loop word-swiper-container">
         <div id="wordCloud01" class="wordCloud">
         </div>
-        <img class="prevWordBtn prevWordBtn01" src="img/prev.png" />
-        <img class="nextWordBtn nextWordBtn01" src="img/next.png" />
+        <div class="tab-box">
+          <div class="tab-box-item active">11111</div>
+          <div class="tab-box-item">22222</div>
+          <div class="tab-box-item">333</div>
+        </div>
       </div>
     </div>
     <div class="main-middle">
-      <div class="data-map">
-        <img src="img/prev.png" class="map-button-prev"/>
-        <img src="img/next.png" class="map-button-next"/>
+      <div class="data-map" id="data-map">
+        <div class="tab-box">
+          <div class="tab-box-item active">11111</div>
+          <div class="tab-box-item">22222</div>
+          <div class="tab-box-item">333</div>
+        </div>
       </div>
-      <div class="data-line">
-        <a class="play" href="javascript:;"></a>
-        <a class="stop" href="javascript:;"></a>
-        <div id='timeline-embed' style="width: 100%; height: 100%"></div>
-      </div>
+
     </div>
     <div class="main-left main-right">
       <div class="data-loop">
@@ -256,17 +257,22 @@
         </div>
       </div>
       <div class="data-loop word-swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div id="wordCloud02" class="wordCloud">
-            </div>
-            <img class="prevWordBtn prevWordBtn02" src="img/prev.png" />
-            <img class="nextWordBtn nextWordBtn02" src="img/next.png" />
-          </div>
+        <div id="wordCloud02" class="wordCloud">
+        </div>
+        <div class="tab-box">
+          <div class="tab-box-item active">11111</div>
+          <div class="tab-box-item">22222</div>
+          <div class="tab-box-item">333</div>
         </div>
 
       </div>
     </div>
+
+  </div>
+  <div class="data-line">
+    <a class="play" href="javascript:;"></a>
+    <a class="stop" href="javascript:;"></a>
+    <div id='timeline-embed' style="width: 100%; height: 100%"></div>
   </div>
 </div>
 </body>
@@ -306,11 +312,11 @@
           "day": "1",
           "year": "2020"
         },
-        "background":{
-          "color":"#000000",
-          "autolink":false
+        "background": {
+          "color": "#000000",
+          "autolink": false
         },
-        "unique_id":'a',
+        "unique_id": 'a',
         "group": "Group 1",
       },
       {
@@ -329,7 +335,7 @@
           "headline": "First Recording",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
         },
-        "unique_id":1
+        "unique_id": 1
       },
       {
         "media": {
@@ -347,7 +353,7 @@
           "headline": "First Recording",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
         },
-        "unique_id":1
+        "unique_id": 1
       },
       {
         "media": {
@@ -365,7 +371,7 @@
           "headline": "Coronavirus Updates: Trump Expands Travel Restrictions on Iran",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
         },
-        "unique_id":1
+        "unique_id": 1
       }
     ]
   }; // replace make_the_json() with the JSON object you created
@@ -373,31 +379,32 @@
   // and the JSON object or an instance of TL.TimelineConfig created from
   // a suitable JSON object
   window.timeline = new TL.Timeline('timeline-embed', timeline_json
-  // , {
-  //     	language: "fr",
-  //     	ga_property_id: "UA-27829802-4"
-  //     }
-      );
+    // , {
+    //     	language: "fr",
+    //     	ga_property_id: "UA-27829802-4"
+    //     }
+  );
   var autoPlayTimer = null;
   var lineIndex = '';
-  timeline.on('change', function(data) {
+  timeline.on('change', function (data) {
     lineIndex = data.unique_id;
     console.log(data)
   });
+
   function playTimeLine() {
     $('.data-line .stop').hide();
     $('.data-line .play').show();
     autoPlayTimer = setInterval(function () {
-      if(lineIndex===timeline_json.events[timeline_json.events.length-1].unique_id){
+      if (lineIndex === timeline_json.events[timeline_json.events.length - 1].unique_id) {
         timeline.goToStart();
         // clearInterval(autoPlayTimer);
         // $('.data-line .play').hide();
         // $('.data-line .stop').show();
         // return false
-      }else {
+      } else {
         timeline.goToNext();
       }
-    },1000);
+    }, 1000);
 
   };
   $('.data-line .stop').click(function () {
