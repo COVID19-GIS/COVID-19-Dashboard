@@ -74,7 +74,7 @@ $(function () {
       trigger: 'axis'
     },
     legend: {
-      data: ['Total Confirmed', 'Total Deaths', 'Total Recovered'],
+      data: ['Total Confirmed', 'Total Deaths'],
       textStyle: {
         color: '#fff',
         fontSize:'10'
@@ -121,13 +121,7 @@ $(function () {
         type: 'line',
         stack: '总量',
         data: [220, 182, 191, 234, 290, 330, 310]
-      },
-      {
-        name: 'Total Recovered',
-        type: 'line',
-        stack: '总量',
-        data: [150, 232, 201, 154, 190, 330, 410]
-      },
+      }
     ]
   };
   chart01.setOption(chartOption);
