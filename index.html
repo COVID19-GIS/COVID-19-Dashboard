@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/timeline.css">
-
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 </head>
 <body>
 <div id="app">
@@ -151,12 +152,12 @@
       </div>
     </div>
     <div class="main-middle">
-      <div class="data-map" id="data-map">
-        <div class="tab-box">
-          <div class="tab-box-item active">11111</div>
+      <div class="data-map" id="map">
+        <!-- <div class="tab-box">
+          <div class="tab-box-item active" id=""></div>
           <div class="tab-box-item">22222</div>
           <div class="tab-box-item">333</div>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -283,6 +284,7 @@
 <script src="js/wordCloud2.js"></script>
 <script src="js/main.js"></script>
 <script src="js/timeline.js"></script>
+<script src="js/map/map.js"></script>
 <script type="text/javascript">
   var timeline_json = {
 
@@ -317,7 +319,7 @@
           "autolink": false
         },
         "unique_id": 'a',
-        "group": "Group 1",
+        "group": "WHO",
       },
       {
         "media": {
@@ -330,7 +332,7 @@
           "day": "2",
           "year": "2020"
         },
-        "group": "Group 2",
+        "group": "China",
         "text": {
           "headline": "First Recording",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
@@ -348,7 +350,7 @@
           "day": "3",
           "year": "2020"
         },
-        "group": "Group 3",
+        "group": "United States",
         "text": {
           "headline": "First Recording",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
@@ -366,7 +368,43 @@
           "day": "4",
           "year": "2020"
         },
-        "group": "Group 4",
+        "group": "Europe",
+        "text": {
+          "headline": "Coronavirus Updates: Trump Expands Travel Restrictions on Iran",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        },
+        "unique_id": 1
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "4",
+          "year": "2020"
+        },
+        "group": "Asian",
+        "text": {
+          "headline": "Coronavirus Updates: Trump Expands Travel Restrictions on Iran",
+          "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
+        },
+        "unique_id": 1
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/fSrO91XO1Ck",
+          "caption": "",
+          "credit": "<a href=\"http://unidiscmusic.com\">Unidisc Music</a>"
+        },
+        "start_date": {
+          "month": "2",
+          "day": "4",
+          "year": "2020"
+        },
+        "group": "Others",
         "text": {
           "headline": "Coronavirus Updates: Trump Expands Travel Restrictions on Iran",
           "text": "At the age of 15 Houston was featured on Michael Zager's song, Life's a Party."
