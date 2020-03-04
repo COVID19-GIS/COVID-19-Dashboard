@@ -78,7 +78,7 @@ html, body {
 .data-loop {
     width: 100%;
     background: rgba(134, 199, 254, 0.05);
-    border: 1px solid rgb(54, 54, 54);
+    border: 2px solid rgb(200, 200, 200);
     height: 55%;
     position: relative;
     box-sizing: border-box;
@@ -104,10 +104,11 @@ html, body {
     box-sizing: border-box;
 }
 
-.data-loop .swiper-slide ul {
+.data-loop .swiper-slide ul,.chart-box {
     height: 100%;
-    overflow-y: scroll;
-
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .data-loop .swiper-slide li {
@@ -196,7 +197,7 @@ html, body {
 .data-map {
     width: 100%;
     background: rgba(134, 199, 254, 0.05);
-    border: 1px solid rgb(54, 54, 54);
+    border: 2px solid rgb(200, 200, 200);
     height: 94%;
     position: relative;
     box-sizing: border-box;
@@ -322,8 +323,8 @@ html, body {
 }
 
 .tab-box .tab-box-item {
-    border: 1px solid rgb(54, 54, 54);
-    border-top: none;
+    border: 2px solid rgb(200, 200, 200);
+    /*border-top: none;*/
     float: left;
     height: 25px;
     box-sizing: border-box;
@@ -339,6 +340,7 @@ html, body {
 
 .tab-box .tab-box-item.active {
     background: #000;
+    border-top: none;
     color: #fff;
 }
 .tl-timemarker-media-container span{
