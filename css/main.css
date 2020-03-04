@@ -36,6 +36,7 @@ html, body {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
+    float: left;
     /*line-height: 55px;*/
 }
 
@@ -376,4 +377,12 @@ html, body {
 }
 .tl-timegroup:nth-child(even){
     background: #5d5d5d!important;
+}
+.tl-timegroup .tl-timegroup-message{
+    text-shadow: none!important;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
