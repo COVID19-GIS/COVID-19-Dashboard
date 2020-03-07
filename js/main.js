@@ -24,12 +24,14 @@ $(function () {
       
     //词云
     var wordData01, wordData02;
-    console.log(gdelt_json['title'][0])
-    var data01 = gdelt_json['title'][0];
-
-    var data01 = [['china', 1620], ['case', 802], ['new', 788], ['outbreak', 726], ['confirm', 630], ['first', 499], ['human', 486], ['what', 441], ['spread', 393]]
-    var data02 = [['qqq', 24], ['ss12ss', 42], ['sss', 12], ['hhh', 99], ['xxxx', 19], ['qwwert', 10], ['d1ddd', 312], ['321', 99], ['2d2s', 142],];
-    var data03 = [['www', 24], ['ss12ss', 42], ['dasdd', 12], ['ttt', 99], ['qwwert', 10], ['d1mmd', 32], ['x4xx', 19], ['pppp', 10], ['74e', 312], ['321', 99], ['2d2s', 142],];
+    // console.log(gdelt_json['title'][0])
+    // var data01 = gdelt_json['title'][0];
+    
+    var data01 = [['china', 162], ['case', 80.2], ['new', 78.8], ['outbreak', 72.6], ['confirm', 63], ['first', 49.9], ['human', 48.6], ['what', 44.1], ['spread', 39.3]]
+    //var data02 = [['qqq', 24], ['ss12ss', 42], ['sss', 12], ['hhh', 99], ['xxxx', 19], ['qwwert', 10], ['d1ddd', 312], ['321', 99], ['2d2s', 142],];
+    //var data03 = [['www', 24], ['ss12ss', 42], ['dasdd', 12], ['ttt', 99], ['qwwert', 10], ['d1mmd', 32], ['x4xx', 19], ['pppp', 10], ['74e', 312], ['321', 99], ['2d2s', 142],];
+    var data02 = [['china', 162], ['case', 80], ['new', 78]];
+    var data03 = [['china', 162], ['case', 80], ['new', 78]];
     var dataArr = [data01, data02, data03];
     var dataIndex01 = 0, dataIndex02 = 0;
     $('.tab-box-item').click(function () {
@@ -72,7 +74,7 @@ $(function () {
         shrinkToFit: true
       });
     };
-    //
+
     // GDELT
       var chart01 = echarts.init(document.getElementById('chart01'));
       var chart02 = echarts.init(document.getElementById('chart02'));
