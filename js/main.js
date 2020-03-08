@@ -24,15 +24,14 @@ $(function () {
 
     //词云
     var wordData01, wordData02;
-    console.log(gdelt_json['title'][0])
-    console.log(eval("(" + gdelt_json['title'][0] + ")"))
-
-    var data01 = eval("(" + gdelt_json['title'][0] + ")");
+    // console.log(gdelt_json['title'][0])
+    // console.log(eval("(" + gdelt_json['title'][0] + ")"))
+    title_list = gdelt_json['title']
+    var data01 = eval("(" + title_list[title_list.length - 1] + ")");
     // var data01 = [['china', 1620], ['case', 802], ['new', 788], ['outbreak', 726], ['confirm', 630], ['first', 499], ['human', 486], ['what', 441], ['spread', 393]]
     var data02 = [['qqq', 24], ['ss12ss', 42], ['sss', 12], ['hhh', 99], ['xxxx', 19], ['qwwert', 10], ['d1ddd', 312], ['321', 99], ['2d2s', 142],];
-    var data03 = [['www', 24], ['ss12ss', 42], ['dasdd', 12], ['ttt', 99], ['qwwert', 10], ['d1mmd', 32], ['x4xx', 19], ['pppp', 10], ['74e', 312], ['321', 99], ['2d2s', 142],];
-
-    var dataArr = [data01, data02, data03];
+   
+    var dataArr = [data01, data02];
     var dataIndex01 = 0, dataIndex02 = 0;
     $('.tab-box-item').click(function () {
       $(this).siblings().removeClass('active');
