@@ -440,8 +440,8 @@ html, body {
 
 .map-table {
     width: 388px;
-    top: 144px;
-    right: 20px;
+    top: 300px;
+    left: 20px;
     bottom: 10px;
     pointer-events: all;
     position: absolute;
