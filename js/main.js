@@ -30,7 +30,7 @@ $(function () {
     var data01 = eval("(" + title_list[title_list.length - 1] + ")");
     // var data01 = [['china', 1620], ['case', 802], ['new', 788], ['outbreak', 726], ['confirm', 630], ['first', 499], ['human', 486], ['what', 441], ['spread', 393]]
     var data02 = [['qqq', 24], ['ss12ss', 42], ['sss', 12], ['hhh', 99], ['xxxx', 19], ['qwwert', 10], ['d1ddd', 312], ['321', 99], ['2d2s', 142],];
-   
+
     var dataArr = [data01, data02];
     var dataIndex01 = 0, dataIndex02 = 0;
     $('.tab-box-item').click(function () {
@@ -62,7 +62,7 @@ $(function () {
         backgroundColor: null,
         color: "#ccc",
         rotationSteps: 30,
-        minSize: '10px',
+        minSize: '20px',
         drawOutOfBound: false,
         shrinkToFit: true
       });
@@ -82,7 +82,7 @@ $(function () {
         backgroundColor: null,
         color: "#ccc",
         rotationSteps: 30,
-        minSize: '10px',
+        minSize: '20px',
         drawOutOfBound: false,
         shrinkToFit: true
       });
@@ -178,64 +178,23 @@ $(function () {
   });
 
 
-  //曲线图
-  // var chart01 = echarts.init(document.getElementById('chart01'));
-  // var chart02 = echarts.init(document.getElementById('chart02'));
-  // chartOption = {
-  //   tooltip: {
-  //     trigger: 'axis'
-  //   },
-  //   legend: {
-  //     data: ['Daily Count', 'Tone Score'],
-  //     textStyle: {
-  //       color: '#fff',
-  //       fontSize:'10'
-  //     }
-  //   },
-  //   grid: {
-  //     left: '2%',
-  //     right: '2%',
-  //     bottom: '2%',
-  //     containLabel: true
-  //   },
-  //   toolbox: {
-  //     feature: {
-  //       saveAsImage: {}
-  //     }
-  //   },
-  //   xAxis: {
-  //     type: 'category',
-  //     boundaryGap: false,
-  //     data: gdelt_data['date'],
-  //     axisLine: {
-  //       lineStyle: {
-  //         color: '#dfdfdf'
-  //       }
-  //     }
-  //   },
-  //   yAxis: {
-  //     type: 'value',
-  //     axisLine: {
-  //       lineStyle: {
-  //         color: '#dfdfdf'
-  //       }
-  //     }
-  //   },
-  //   series: [
-  //     {
-  //       name: 'Daily Count',
-  //       type: 'line',
-  //       stack: '总量',
-  //       data: gdelt_data['count'],
-  //     },
-  //     {
-  //       name: 'Tone Score',
-  //       type: 'line',
-  //       stack: '总量',
-  //       data: gdelt_data['score'],
-  //     }
-  //   ]
-  // };
-  // chart01.setOption(chartOption);
-  // chart02.setOption(chartOption);
+  // mapbox表格
+  $('.list_item__1WHUy').click(function () {
+    console.log($(this).index());
+    $(this).find('svg').eq(0).hide();
+    $(this).find('svg').eq(1).show();
+    $(this).siblings().find('svg').eq(0).show();
+    $(this).siblings().find('svg').eq(1).hide();
+    $('.list_listTable__1yV4j').hide();
+    $('.list_listTable__1yV4j').eq($(this).index()-1).show()
+    // $(this).second().show();
+  });
+  $('.modulebox_hidebtn__QHdrj').click(function () {
+    $(this).parents('.map-table').hide();
+    $('.map-table-title').show();
+  });
+  $('.map-table-title').click(function () {
+    $('.map-table').show();
+    $('.map-table-title').hide();
+  })
 });
