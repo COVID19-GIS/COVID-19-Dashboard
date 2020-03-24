@@ -62,7 +62,7 @@ $(function () {
         backgroundColor: null,
         color: "#ccc",
         rotationSteps: 30,
-        minSize: '20px',
+        minFontSize: 15,
         drawOutOfBound: false,
         shrinkToFit: true
       });
@@ -82,7 +82,7 @@ $(function () {
         backgroundColor: null,
         color: "#ccc",
         rotationSteps: 30,
-        minSize: '20px',
+        minFontSize: 15,
         drawOutOfBound: false,
         shrinkToFit: true
       });
